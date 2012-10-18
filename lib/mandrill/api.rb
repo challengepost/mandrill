@@ -2,7 +2,7 @@ module Mandrill
   class API
     # Blank Slate
     instance_methods.each do |m|
-      undef_method m unless m.to_s =~ /^__|object_id|method_missing|respond_to?|to_s|inspect|kind_of?|should|should_not/
+      undef_method m unless m.to_s =~ /^__|object_id|method_missing|respond_to?|to_s|inspect|kind_of?|should|should_not|class|is_a?/
     end
 
     # Mandrill API Documentation: http://mandrillapp.com/api/docs
